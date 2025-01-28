@@ -9,3 +9,8 @@ function getComputerChoice() {
     return "scissors";
   }
 }
+
+//get the humas's choice
+function getHumanChoice() {
+  return prompt("Please enter 'Rock' 'Paper' or 'Scissors'").toLowerCase();
+}
