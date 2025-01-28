@@ -19,3 +19,16 @@ function getComputerChoice() {
 function getHumanChoice() {
   return prompt("Please enter 'Rock' 'Paper' or 'Scissors'").toLowerCase();
 }
+
+//play a round and compare human choice to computer choice to see who wins
+function playRound(humanChoice, computerChoice) {
+  humanChoice = getHumanChoice();
+  computerChoice = getComputerChoice();
+  if (humanChoice === computerChoice) {
+    alert("same!");
+  } else {
+    alert("not same");
+  }
+}
+
+playRound();
